@@ -8,6 +8,7 @@ public class KiemTraChuoi {
         System.out.println(Arrays.toString(arr));
 
         Scanner sc = new Scanner(System.in);
+
         System.out.println("Nhập phần tử cần tìm");
         String str2 = sc.nextLine();
 
