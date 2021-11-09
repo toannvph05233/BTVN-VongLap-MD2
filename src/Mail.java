@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class Mail {
+
     public static void main(String[] args) {
         StopWatch stopWatch = new StopWatch();
         Scanner scanner = new Scanner(System.in);
