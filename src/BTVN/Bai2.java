@@ -1,3 +1,5 @@
+package BTVN;
+
 public class Bai2 {
     public static void main(String[] args) {
 //  Bài 2: Tính tổng các SNT từ 10 -> 50.

@@ -1,3 +1,5 @@
+package BTVN;
+
 public class Bai1 {
     int a;
 
