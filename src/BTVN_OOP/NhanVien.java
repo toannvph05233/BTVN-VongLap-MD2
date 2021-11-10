@@ -1,11 +1,15 @@
 package BTVN_OOP;
 
 public class NhanVien {
+    private int id;
     private String name;
     private int age;
     private String gender;
 
+    private static int idNumber = 1;
+
     public NhanVien(String name, int age, String gender) {
+        this.id = idNumber++;
         this.name = name;
         this.age = age;
         this.gender = gender;
@@ -35,9 +39,11 @@ public class NhanVien {
         this.gender = gender;
     }
 
+    @Override
     public String toString() {
         return "NhanVien{" +
-                "name='" + name + '\'' +
+                "id=" + id +
+                ", name='" + name + '\'' +
                 ", age=" + age +
                 ", gender='" + gender + '\'' +
                 '}';
