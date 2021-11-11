@@ -14,8 +14,9 @@ public class Main {
         while (true) {
             System.out.println("1. Hiển thị nhân viên");
             System.out.println("2. thêm nhân viên");
-            System.out.println("3. xóa nhân viên");
-            int so = scanner.nextInt();
+            System.out.println("3. edit nhân viên");
+            System.out.println("4. xóa nhân viên");
+            int so = Integer.parseInt(scanner.nextLine());
 
             switch (so) {
                 case 1:
@@ -24,8 +25,11 @@ public class Main {
                 case 2:
                     nhanViens = Controller.createNhanVien(nhanViens);
                     break;
-                case 3:
+                case 4:
                     nhanViens = Controller.delete(nhanViens);
+                    break;
+                case 3:
+                    nhanViens = Controller.editNhanVien(nhanViens);
                     break;
             }
         }
